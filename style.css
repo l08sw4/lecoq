@@ -234,6 +234,7 @@ main {
 .headers ul li {
     line-height: 4.5rem;
     color: white;
+    cursor: pointer;
 }
 
 .headers ul li:not(:first-child):before {
