@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+	<script type="text/javascript" src="script.js"></script>
+	<!--구글폰트 아이콘-->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<!---스와이퍼-->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!--제이쿼리-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- Slick 불러오기 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+
+<body>
+
+
+
+	<main class="mb-128">
+		<div w3-include-html="header.html"></div>
+		<div class="swiper-container swiper1">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="images/main_slide_1.jpg">
+				</div>
+				<div class="swiper-slide"><img src="images/main_slide_2.jpg">
+				</div>
+				<div class="swiper-slide"><img src="images/main_slide_3.jpg">
+				</div>
+				<div class="swiper-slide"><img src="images/main_slide_4.jpg">
+				</div>
+				<div class="swiper-slide"><img src="images/main_slide_5.jpg">
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<div class="swiper-button-div">
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+
+	</main>
+
+	<script>
+		//스와이퍼
+		new Swiper('.swiper1', {
+			slidesPerView: 3, //한번에 3장보여줌
+			autoplay: true, //자동 재생 여부
+			loop: true, //반복 재생 여부
+			spaceBetween: 10,
+			centeredSlides: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: { // 버튼          
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
+
+
+	<article class="pse-5 ranking sp-bt mb-128 ">
+
+		<div class="mse-16">
+			<h1>Search<br>ranking</h1>
+			<ul class="rank">
+				<li class="on">
+					<button class="rank-btn">1&nbsp;&nbsp;&nbsp;패딩</button>
+					<div id="menu1" class="content">
+						<div>
+							<img src="images/ranking/rank-padding-1.jpg">
+							<p>Goose Down<br>Light Purple</p>
+						</div>
+						<div> <img src="images/ranking/rank-padding-2.jpg">
+							<p>Goose Down<br>KHAKI GRAY</p>
+						</div>
+						<div><img src="images/ranking/rank-padding-3.jpg">
+							<p>Dualplex<br>goose down</p>
+						</div>
+						<div><img src="images/ranking/rank-padding-4.jpg">
+							<p>Thinflex<br>goose down </p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<button class="rank-btn" style=" border-top: 1px solid #ddd;">2&nbsp;&nbsp;&nbsp;맨투맨</button>
+					<div id="menu2" class="content">
+						<div>
+							<img src="images/ranking/rank-sweatshirt-1.jpg">
+							<p>Graphic<br>shirt</p>
+						</div>
+						<div>
+							<img src="images/ranking/rank-sweatshirt-2.jpg">
+							<p>Cotton shirt<br>OFF-WHITE</p>
+						</div>
+						<div>
+							<img src="images/ranking/rank-sweatshirt-3.jpg">
+							<p>Cotton shirt<br>LIME</p>
+						</div>
+						<div>
+							<img src="images/ranking/rank-sweatshirt-4.jpg">
+							<p>graphic<br> sweatshirt</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<button class="rank-btn" style=" border-top: 1px solid #ddd;">3&nbsp;&nbsp;&nbsp;자켓</button>
+					<div id="menu3" class="content">
+						<div>
+							<img src="images/ranking/rank-jacket-1.jpg">
+							<p>Zero Per<br>Jumper</p>
+						</div>
+						<div>
+							<img src="images/ranking/rank-jacket-2.jpg">
+							<p>Sakariva<br> track top</p>
+						</div>
+						<div>
+							<img src="images/ranking/rank-jacket-3.jpg">
+							<p>ZeroPer<br>BLACK</p>
+						</div>
+						<div>
+							<img src="images/ranking/rank-jacket-4.jpg">
+							<p>ZeroPer<br>cream</p>
+						</div>
+				</li>
+				<li>
+					<button class="rank-btn" style=" border-top: 1px solid #ddd;">4&nbsp;&nbsp;&nbsp;신발</button>
+					<div id="menu4" class="content">
+						<div>
+							<img src="images/ranking/rank-shoes-1.jpg">
+							<p>Drop Drop Drop</p>
+						</div>
+						<div>
+							<img src="images/ranking/rank-shoes-2.jpg">
+							<p>Popola<br>BEIGE</p>
+						</div>
+						<div>
+							<img src="images/ranking/rank-shoes-3.jpg">
+							<p>Popola</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<button class="rank-btn" style=" border-top: 1px solid #ddd;">5&nbsp;&nbsp;&nbsp;바지</button>
+					<div id="menu5" class="content">
+						<div>
+							<img src="images/ranking/rank-pants-1.jpg">
+							<p>straight pants</p>
+						</div>
+						<div>
+							<img src="images/ranking/rank-pants-2.jpg">
+							<p>jogger pants</p>
+						</div>
+						<div>
+							<img src="images/ranking/rank-pants-3.jpg">
+							<p>track pants</p>
+						</div>
+						<div>
+							<img src="images/ranking/rank-pants-4.jpg">
+							<p>cargo pants</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="signature">
+			<div class="signature-big">
+				<img src="images/ranking/signature-1.jpg">
+				<div class="signature-big-text">
+					<p>AGA 씬플렉스K</p>
+					<p> 롱 구스 다운</p>
+					<p>407,550<span>10%</span></p>
+				</div>
+			</div>
+			<div class="signature-small">
+				<section>
+					<img src="images/ranking/signature-2.jpg">
+					<div class="signature-text">
+						<p>AGA 플렉스</p>
+						<p> 롱 구스 다운</p>
+						<p>407,550<span>10%</span></p>
+					</div>
+				</section>
+				<section>
+					<img src="images/ranking/signature-3.jpg">
+					<div class="signature-text">
+						<p>AGA 씬플렉스</p>
+						<p> 롱 구스 다운</p>
+						<p>407,550<span>10%</span></p>
+					</div>
+				</section>
+				<section>
+					<img src="images/ranking/signature-4.jpg">
+					<div class="signature-text">
+						<p>듀얼플렉스</p>
+						<p>구스 다운</p>
+						<p>455,055<span>10%</span></p>
+					</div>
+				</section>
+				<section style="padding-left: 24px;">
+					<h3>극강의 보온성</h3>
+					<p>겨울 시그니처 아이템</p>
+				</section>
+				<section>
+					<img src="images/ranking/signature-5.jpg">
+					<div class="signature-text">
+						<p>AGA 유니 에어플렉스 튜브 </p>
+						<p> 구스 다운</p>
+						<p>307,550<span>10%</span></p>
+					</div>
+				</section>
+				<section>
+					<img src="images/ranking/signature-6.jpg">
+					<div class="signature-text">
+						<p> AGA 에어클라우드 리버시블 </p>
+						<p> 구스 다운</p>
+						<p>322,050<span>20%</span></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+	</article>
+
+
+	<script>
+		const buttons = document.querySelectorAll('.rank-btn');
+
+		buttons.forEach(function (button, index) {
+			button.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				this.parentNode.classList.toggle('on');
+
+				buttons.forEach(function (button2, index2) {
+					if (index !== index2) {
+						button2.parentNode.classList.remove('on');
+					}
+				});
+			});
+		});
+		//https://codepen.io/kty0529/pen/vYRogOp?editors=1010 아코디언 추후 글삭제 링크저장하기
+
+		//가상요소에 링크 걸기 추후 퍼체이스 달면될듯? 안달면 삭제 
+		//let links = document.querySelector('.popular-btn');
+		//links.addEventListener('click', e => top.location.href = "#");
+	</script>
+
+
+	<div class="sp-bt pse-5 banner mb-128 ">
+
+		<img src="images/banner-1.jpg">
+
+		<img src="images/banner-2.jpg">
+
+	</div>
+
+	<article class="nowtrend mb-128">
+
+		<h1 class="center">NOW TREND</h1>
+
+
+		<div class="center mb-32">
+			<button class=" tablink tabmenu-color" onclick="openTrend(event,'first-trend')">#올 겨울 더 따뜻하게</button>
+			<button class=" tablink" onclick="openTrend(event,'secon-trend')">#윈터 패딩 슈즈</button>
+			<button class="tablink" onclick="openTrend(event,'third-trend')">#베이직 티셔츠</button>
+		</div>
+
+		<div id="first-trend" class="trend sp-bt mb-128">
+			<div class="trend-div-first">
+				<h2 class="center mb-32">BEST ITEM</h2>
+				<div class="sp-bt trend-div-small">
+					<section>
+						<div><img src="images/trend/trend-1-1.jpg">
+						</div>
+						<div>
+							<p>AGA 트리코트 구스 다운</p>
+							<p>WHITE/BLACK/MOC</p>
+							<p>379,050원
+								<span class="gray">399,000원</span>
+								<span class="sale">5%</span></p>
+						</div>
+					</section>
+					<section>
+						<div><img src="images/trend/trend-1-2.jpg">
+						</div>
+						<div>
+							<p>클라우드 롱 구스 다운</p>
+							<p>OFF-WHITE/BLACK/PATTERN</p>
+							<p>360,050원
+								<span class="gray">
+									379,000원</span>
+								<span class="sale">5%</span></p>
+						</div>
+					</section>
+					<section>
+						<div><img src="images/trend/trend-1-3.jpg">
+						</div>
+						<div>
+							<p>클라우드 롱 구스 다운</p>
+							<p>GRAY/BROWN/BEIGE</p>
+							<p>360,050원
+								<span class="gray">379,000원</span>
+								<span class="sale">5%</span></p>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="trend-big">
+				<img src="images/trend/trend-1-big.jpg">
+				<div class="trend-big-text">
+					<p>포근한 패딩과<br>플리스의 조화로움</p>
+					<p>우븐믹스 플리스 아노락</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="secon-trend" class="trend mb-128" style="display:none">
+			<div class="trend-div-first">
+				<h2 class="center mb-32">NEW ITEM</h2>
+				<div class="sp-bt trend-div-small">
+					<section>
+						<div><img src="images/trend/trend-2-1.jpg">
+						</div>
+						<div>
+							<p>코콘</p>
+							<p>BLACK/BEIGE</p>
+							<p>122,550원
+								<span class="gray">129,000원</span>
+								<span class="sale">5%</span></p>
+						</div>
+					</section>
+					<section>
+						<div><img src="images/trend/trend-2-2.jpg">
+						</div>
+						<div>
+							<p>코쿠니</p>
+							<p>BLACK/WHITE/BEIGE</p>
+							<p>132,050원
+								<span class="gray">
+									139,000원</span>
+								<span class="sale">5%</span></p>
+						</div>
+					</section>
+					<section>
+						<div><img src="images/trend/trend-2-3.jpg">
+						</div>
+						<div>
+							<p>
+								드롭드롭 코쿠니</p>
+							<p>BLACK/BEIGE</p>
+							<p>141,550원
+								<span class="gray">149,000원</span>
+								<span class="sale">5%</span></p>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="trend-big">
+				<img src="images/trend/trend-2-big.jpg">
+				<div class="trend-big-text">
+					<p>발 끝까지 따뜻하게 감싸는</p>
+					<p>르꼬끄의 대표 윈터 패딩 슈즈,코콘</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="third-trend" class="trend mb-128" style="display:none">
+			<div class="trend-div-first">
+				<h2 class="center mb-32">NEW ITEM</h2>
+				<div class="sp-bt trend-div-small">
+					<section>
+						<div><img src="images/trend/trend-3-1.jpg">
+						</div>
+						<div>
+							<p>스몰 라벨 반팔티</p>
+							<p>WHITE/BLACK/MOC</p>
+							<p>37,050원
+								<span class="gray">39,000원</span>
+								<span class="sale">5%</span></p>
+						</div>
+					</section>
+					<section>
+						<div><img src="images/trend/trend-3-2.jpg">
+						</div>
+						<div>
+							<p>
+								에센셜 면 긴팔티</p>
+							<p>WHITE/BLACK</p>
+							<p>46,550원
+								<span class="gray">
+									49,000원</span>
+								<span class="sale">5%</span></p>
+						</div>
+					</section>
+					<section>
+						<div><img src="images/trend/trend-3-3.jpg">
+						</div>
+						<div>
+							<p>퍼포먼스 기모 긴팔</p>
+							<p>BLACK/WHITE</p>
+							<p>75,050원
+								<span class="gray">79,000원</span>
+								<span class="sale">5%</span></p>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="trend-big">
+				<img src="images/trend/trend-3-big.jpg">
+				<div class="trend-big-text">
+					<p>BASIC T-SHIRT</p>
+					<p>레이어드하기 좋은 베이직 티셔츠</p>
+				</div>
+			</div>
+		</div>
+
+	</article>
+
+
+	<script>
+		//클릭시 컨텐츠가 바뀜
+		function openTrend(evt, trendName) {
+			var i, x, tablinks;
+			x = document.getElementsByClassName("trend");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < x.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" tabmenu-color", "");
+			}
+			document.getElementById(trendName).style.display = "block";
+			evt.currentTarget.className += " tabmenu-color";
+		}
+	</script>
+
+
+	<article class="our-story">
+
+		<h1 class="center">our-story</h1>
+
+		<div class="videos">
+			<div class="slide-box">
+				<section class="slide">
+					<img src="images/video-thumb/video-thumb1.jpg" class="modal-btn">
+				</section>
+				<section class="slide">
+					<img src="images/video-thumb/video-thumb2.jpg" class="modal-btn">
+				</section>
+				<section class="slide">
+					<img src="images/video-thumb/video-thumb3.jpg" class="modal-btn">
+				</section>
+			</div>
+		</div>
+
+		<div class="modal">
+			<div class="modal-content">
+				<span class="close">✕</span>
+				<iframe width="560" height="315"
+					src="https://www.youtube.com/embed/ccDmxeFpEuQ?si=X7Nt_4rk9qaK4uIF&amp;controls=0&mute=1"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div class="modal">
+			<div class="modal-content">
+				<span class="close">✕</span>
+				<iframe width="560" height="315"
+					src="https://www.youtube.com/embed/TCFNGE-kHG0?si=QRzaOU-EumKws_Zg&amp;controls=0&mute=1"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div class="modal">
+			<div class="modal-content">
+				<span class="close">✕</span>
+				<iframe width="560" height="315"
+					src="https://www.youtube.com/embed/1mIMNBDpuuo?si=BDv8sXq8u8bw3lBi&amp;controls=0&mute=1"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+		<!--모달창 닫을때 소리 안없어지는 이슈 해결x 대신 음소거재생-->
+		<div onclick="goLeft()" class="btnLeft"><span class="material-symbols-outlined">
+				arrow_back_ios
+			</span>
+		</div>
+
+		<div onclick="goRight()" class="btnRight"><span class="material-symbols-outlined">
+				arrow_forward_ios
+			</span>
+		</div>
+
+	</article>
+
+	<script>
+		var modals = document.getElementsByClassName("modal");
+		// Modal을 띄우는 클래스 
+		var btns = document.getElementsByClassName("modal-btn");
+		// Modal을 닫는 close 클래스
+		var spanes = document.getElementsByClassName("close");
+		var funcs = [];
+
+		// Modal을 띄우고 닫는 클릭 이벤트를 정의한 함수
+		function Modal(num) {
+			return function () {
+				// 해당 클래스의 내용을 클릭하면 Modal 열림
+				btns[num].onclick = function () {
+					modals[num].style.display = "block";
+					console.log(num);
+					//스크롤 방지
+					document.body.style.overflow = "hidden";
+				};
+
+				// <span> 태그(X 버튼)를 클릭하면 Modal 닫힘
+				spanes[num].onclick = function () {
+					modals[num].style.display = "none";
+					//스크롤 다시 가동
+					document.body.style.overflowY = "unset";
+				};
+
+			};
+		}
+		// 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의
+		for (var i = 0; i < btns.length; i++) {
+			funcs[i] = Modal(i);
+		}
+		// 원하는 Modal 수만큼 funcs 함수를 호출
+		for (var j = 0; j < btns.length; j++) {
+			funcs[j]();
+		}
+
+		function closeSound(layer_id) {
+			document.all[layer_id].innerHTML = '';
+		}
+
+		//썸네일 슬라이드
+		let slides = document.getElementsByClassName("slide");
+		let index = 0;
+
+		function goLeft() {
+			if (index == 0) index = slides.length - 1;
+			else index--;
+			slides[0].style.marginLeft = "-" + index * 500 + "px";
+		}
+
+		function goRight() {
+			if (index == slides.length - 1) index = 0;
+			else index++;
+			slides[0].style.marginLeft = "-" + index * 500 + "px";
+		}
+	</script>
+
+	<article class="school flex mb-128">
+
+		<p class="pse-5">SPECIAL</p>
+
+		<div class="school-small">
+			<p>르꼬끄와 함께하는<br>새로운 시작</p>
+			<img src="images/school slide/school-small.jpg">
+		</div>
+
+		<div class="flex slick-btn">
+			<div class="slide-prev-btn"><img src="images/icon/icon-arrow-left.png"></div>
+			<div class="slide-next-btn"><img src="images/icon/icon-arrow-right.png"></div>
+			<div class="slide-auto-stop">
+				<p>||</p>
+			</div>
+			<div class="slide-auto-play" style="display: none">
+				<p>▶</p>
+			</div>
+		</div>
+
+		<div id="slicks1">
+			<div class="slickslide1">
+				<div><img src="images/school slide/school-slide-1.jpg">
+				</div>
+				<div><img src="images/school slide/school-slide-2.jpg">
+				</div>
+				<div><img src="images/school slide/school-slide-3.jpg">
+				</div>
+				<div><img src="images/school slide/school-slide-4.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div id="slicks2">
+			<div class="slickslide2">
+				<div><img src="images/school slide/school-slide-2.jpg">
+				</div>
+				<div><img src="images/school slide/school-slide-3.jpg">
+				</div>
+				<div><img src="images/school slide/school-slide-4.jpg">
+				</div>
+				<div><img src="images/school slide/school-slide-1.jpg">
+				</div>
+			</div>
+		</div>
+
+	</article>
+
+	<script>
+		$(document).ready(function () {
+			$('.slickslide1').slick({
+				autoplay: true,
+				autoplaySpeed: 2000,
+				prevArrow: '.slide-prev-btn',
+				nextArrow: '.slide-next-btn',
+			});
+
+			$('.slickslide2').slick({
+				autoplay: true,
+				autoplaySpeed: 2000,
+				asNavFor: '.slickslide1',
+				prevArrow: '.slide-prev-btn',
+				nextArrow: '.slide-next-btn',
+			});
+
+			$('.slide-auto-play').on('click', function () {
+				$('.slickslide1').slick('slickPlay');
+				$('.slickslide2').slick('slickPlay');
+				$('.slide-auto-play').hide();
+				$('.slide-auto-stop').show();
+			});
+
+			$('.slide-auto-stop').on('click', function () {
+				$('.slickslide1').slick('slickPause');
+				$('.slickslide2').slick('slickPause');
+				$('.slide-auto-stop').hide();
+				$('.slide-auto-play').show();
+			});
+
+		});
+	</script>
+
+
+	<article class="pse-5">
+
+		<h1 class="center">AMBASSADOR</h1>
+
+		<div class="ambassador sp-bt">
+			<section>
+				<img src="images/ambassador/ambassador-1-1.jpg"
+					onmouseover="this.src='images/ambassador/ambassador-1-2.jpg'"
+					onmouseout="this.src='images/ambassador/ambassador-1-1.jpg'">
+				<p>[박민균 착용]</p>
+				<p>듀스 리버시블 자켓 / DARK GREEN</p>
+				<p>189,000원</p>
+			</section>
+			<section>
+				<img src="images/ambassador/ambassador-2-1.jpg"
+					onmouseover="this.src='images/ambassador/ambassador-2-2.jpg'"
+					onmouseout="this.src='images/ambassador/ambassador-2-1.jpg'">
+				<p>[심재영,박민균 PICK]</p>
+				<p>AT 백팩 29L / DARK BLUE</p>
+				<p>169,000원</p>
+			</section>
+			<section>
+				<img src="images/ambassador/ambassador-3-1.jpg"
+					onmouseover="this.src='images/ambassador/ambassador-3-2.jpg'"
+					onmouseout="this.src='images/ambassador/ambassador-3-1.jpg'">
+				<p>[심재영 착용]</p>
+				<p>클라우드 숏 구스 다운 / BLACK</p>
+				<p>289,000원</p>
+			</section>
+			<section>
+				<img src="images/ambassador/ambassador-4-1.jpg"
+					onmouseover="this.src='images/ambassador/ambassador-4-2.jpg'"
+					onmouseout="this.src='images/ambassador/ambassador-4-1.jpg'">
+				<p>[심재영 착용] </p>
+				<p>AGA 에어클라우드 구스 다운 / Light Purple</p>
+				<p>339,000원</p>
+			</section>
+			<section>
+				<img src="images/ambassador/ambassador-5-1.jpg"
+					onmouseover="this.src='images/ambassador/ambassador-5-2.jpg'"
+					onmouseout="this.src='images/ambassador/ambassador-5-1.jpg'">
+				<p>[박민균 PICK]</p>
+				<p>베이직 메신저백 / MULTI-COLOR</p>
+				<p>89,000원</p>
+			</section>
+		</div>
+
+	</article>
+
+
+	<article class="insta ">
+
+		<h1 class="center">INSTAGRAM</h1>
+
+		<div class="sp-bt">
+			<section>
+				<img src="images/insta/insta-1.jpg">
+				<p>1주 전·업로드</p>
+				<p>𝗛𝗔𝗣𝗣𝗬 𝗖𝗛𝗥𝗜𝗦𝗧𝗠𝗔𝗦 𝗪𝗜𝗧𝗛 𝗟𝗘 𝗖𝗢𝗤 𝗦𝗣𝗢𝗥𝗧𝗜𝗙
+					르꼬끄가 이번 연말 시즌을 맞이해 추천하는
+					크리스마스 무드 가득 담은 윈터 아이템
+					올겨울 소중한 사람에게 르꼬끄 윈터 아이템과 함께
+					따뜻한 연말을 선물해 보는 건 어떨까요?
+				</p>
+			</section>
+			<section>
+				<img src="images/insta/insta-2.jpg">
+				<p>1주 전·업로드</p>
+				<p> 𝐋𝐞 𝐜𝐨𝐪 𝐬𝐩𝐨𝐫𝐭𝐢𝐟 𝐖𝐢𝐧𝐭𝐞𝐫 𝐂𝐚𝐦𝐩𝐚𝐢𝐠𝐧
+					"우리가 함께 할 수 있다니 조금은 따뜻해지는 것 같아“
+				</p>
+			</section>
+			<section>
+				<img src="images/insta/insta-4.jpg">
+				<p>1주 전·업로드</p>
+				<p>𝐋𝐞 𝐜𝐨𝐪 𝐬𝐩𝐨𝐫𝐭𝐢𝐟 𝐖𝐢𝐧𝐭𝐞𝐫 𝐂𝐚𝐦𝐩𝐚𝐢𝐠𝐧"그렇게 차가웠던 나의 겨울은 너로 인해 따뜻해졌다"
+				</p>
+			</section>
+			<section>
+				<img src="images/insta/insta-4.jpg">
+				<p>3주 전·업로드</p>
+				<p>𝗟𝗘 𝗖𝗢𝗤 𝗦𝗣𝗢𝗥𝗧𝗜𝗙 𝗫 𝗞𝗢𝗥𝗘𝗔 𝗢𝗣𝗘𝗡 𝟮𝟬𝟮𝟯
+					𝗟𝗘 𝗖𝗢𝗤 𝗧𝗘𝗡𝗡𝗜𝗦 𝗩𝗜𝗟𝗟𝗔𝗚𝗘 𝗜𝗡𝗙𝗢
+				</p>
+			</section>
+			<section>
+				<img src="images/insta/insta-5.jpg">
+				<p>6주 전·업로드</p>
+				<p>르꼬끄가 제안하는 올 겨울 트렌드 아이템 #윈터네주부츠실버에디션
+				</p>
+			</section>
+		</div>
+
+	</article>
+
+
+	<div w3-include-html="footer.html"></div>
+
+	<a href="#" class="top-btn"><img
+			src="images/icon/top-btn.png"></a>
+
+</body>
+
+
+<script>
+	includeHTML();
+</script>
+
+</html>
