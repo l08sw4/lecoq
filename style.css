@@ -234,7 +234,6 @@ main {
 .headers ul li {
     line-height: 4.5rem;
     color: white;
-    cursor: pointer;
 }
 
 .headers ul li:not(:first-child):before {
@@ -824,6 +823,22 @@ main {
     -webkit-box-orient: vertical;
 }
 
+.ambassador section img {
+    width: 320px;
+    background: #f8f8f8;
+    height: 400px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.ambassador>:nth-child(2n) {
+    margin: 0 16px;
+}
+
+.ambassador section p {
+    margin-top: 4px;
+}
+
 footer {
     position: relative;
     padding: 72px 5%;
@@ -927,21 +942,8 @@ footer>:nth-child(2)> :nth-child(2) p {
     bottom: 0;
 }
 
-.ambassador section img {
-    width: 320px;
-    background: #f8f8f8;
-    height: 400px;
-    object-fit: contain;
-    margin-bottom: 12px;
-}
 
-.ambassador>:nth-child(2n) {
-    margin: 0 16px;
-}
 
-.ambassador section p {
-    margin-top: 4px;
-}
 
 .search-popup {
     width: 100%;
