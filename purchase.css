@@ -253,7 +253,7 @@ select {
 }
 
 .listbox {
-    margin: 0 auto;
+    margin: 0 auto 128px auto;
 }
 
 .scroll1,
@@ -461,7 +461,6 @@ td {
 
 .review-more {
     color: #444;
-
 }
 
 .review-more p {
