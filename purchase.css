@@ -157,51 +157,22 @@
     color: white;
 }
 
-.accordion1 {
-    bottom: 130px;
-    right: 5%;
+select {
     width: 240px;
+    font-family: Pretendard, sans-serif;
     border-bottom: 1px solid #666;
+    padding: 0px 5%;
+    background: url(images/icon/down-arrow-icon.png)no-repeat;
+    background-size: 8px;
+    background-position: right;
+    border-radius: 0;
     margin-right: 4px;
-}
-
-.accordion1 label {
-    cursor: pointer;
-    color: #666;
-}
-
-.accordion1 label span {
-    float: right;
-    line-height: 1.2rem;
-}
-
-.accordion1>ul {
-    display: none;
-    position: absolute;
-    border: 1px solid black;
-    background: white;
-    width: 240px;
-    padding: 0 12px;
-}
-
-.accordion1>ul>li {
-    padding: 8px 0;
-    font-size: 0.8rem;
-    color: #666;
-}
-
-.accordion1>ul>li:hover {
-    color: #0a0a0a;
-}
-
-.accordion1 input[type="checkbox"] {
-    display: none;
-    /* checkbox 숨기기 */
-}
-
-.accordion1 input[type="checkbox"]:checked+label+ul {
-    display: block;
-    max-height: 340px;
+    padding: 0;
+    -webkit-appearance: none;
+    /* for chrome */
+    -moz-appearance: none;
+    /*for firefox*/
+    appearance: none;
 }
 
 .info-last {
@@ -213,7 +184,7 @@
 }
 
 .show-more {
-    width: 1040px;
+    width: 1000px;
 }
 
 .tabmenu-button {
@@ -248,7 +219,7 @@
 }
 
 .info-list {
-    width: 1040px;
+    width: 1000px;
     position: sticky;
     z-index: 88;
     top: 100px;
@@ -285,7 +256,7 @@
 .scroll1,
 .scroll2,
 .scroll3 {
-    width: 1040px;
+    width: 1000px;
     margin-bottom: 72px;
 }
 
@@ -354,8 +325,7 @@
 }
 
 table {
-    width: 1008px;
-    /*아티클은 1040으로 정했으나 테이블은 딱붙으면 안이뻐서 줄임*/
+    width: 1000px;
     text-align: left;
     border-collapse: collapse;
 }
@@ -393,12 +363,14 @@ td {
 }
 
 .star {
-    width:400px;
+    width: 400px;
     text-align: center;
 }
-.star *{
+
+.star * {
     margin: 8px 0;
 }
+
 .review-graph {
     width: 640px;
 }
@@ -424,7 +396,7 @@ td {
 }
 
 .review-btn {
-    margin:8px 0;
+    margin: 8px 0;
     width: 400px;
     height: 10px;
     background: #efefef;
