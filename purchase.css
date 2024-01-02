@@ -1,0 +1,447 @@
+.title {
+    font-size: 1.6rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+}
+
+.grays {
+    color: gray;
+}
+
+.guide-btn {
+    height: 24px;
+    width: 80px;
+    padding: 0;
+    font-weight: normal;
+    border-radius: 2px;
+    color: white;
+}
+
+.bg-dark {
+    background: rgb(36, 36, 36);
+}
+
+.bg-dark:hover {
+    background: black
+}
+
+.bg-gray {
+    background: rgb(198, 198, 198);
+}
+
+.bg-gray:hover {
+    background: rgb(135, 135, 135);
+}
+
+.basket-btn {
+    width: 48%;
+    border-radius: 5px;
+    padding: 14px 0;
+    color: white;
+}
+
+/*start*/
+.mains {
+    padding-top: 134px;
+}
+
+.slides {
+    position: relative;
+    width: 1040px;
+    height: 720px;
+    overflow: hidden;
+}
+
+.slides:hover {
+    cursor: url(images/icon/cursor-icon.png) 20 30, auto;
+}
+
+.slide-box2 {
+    width: 2080px;
+    display: flex;
+}
+
+.slide2 {
+    width: 520px;
+    height: 720px;
+    transition: 0.6s;
+}
+
+.slide2 img {
+    width: 520px;
+    height: 720px;
+    object-fit: contain;
+    background: #f8f8f8;
+    object-position: center;
+}
+
+.btnLeft,
+.btnRight {
+    padding: 22px 24px 30px;
+    height: 0px;
+    font-size: 1.8rem;
+    color: #a8a8a8;
+}
+
+.btnLeft:hover,
+.btnRight:hover {
+    color: rgb(67, 67, 67);
+}
+
+.btnRight {
+    right: 20px;
+}
+
+.modal {
+    width: 100%;
+    z-index: 999;
+}
+
+.modal-content img {
+    height: 700px;
+    object-fit: contain;
+}
+
+.purchase-intro {
+    border-left: 1px solid #ddd;
+    position: fixed;
+    z-index: 99;
+    background: white;
+    right: 0;
+    padding: 134px 5% 0 32px;
+    height: 100vh;
+    top: 0;
+}
+
+.price-font {
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.price-info * {
+    margin: 4px 0;
+}
+
+.price-info div * {
+    margin-right: 8px;
+}
+
+.price-info h4 {
+    width: 100%;
+}
+
+.price-info p {
+    line-height: 1.7rem;
+}
+
+.color-option span {
+    border-radius: 50%;
+    margin-right: 8px;
+    padding: 5px 5px;
+    border: 1px solid #ddd;
+}
+
+.color-option :nth-child(1) {
+    background: #000000;
+    color: white;
+}
+
+.color-option :nth-child(2) {
+    background: #415C47;
+    color: #415C47;
+}
+
+.color-option :nth-child(3) {
+    background: white;
+    color: white;
+}
+
+.accordion1 {
+    bottom: 130px;
+    right: 5%;
+    width: 240px;
+    border-bottom: 1px solid #666;
+    margin-right: 4px;
+}
+
+.accordion1 label {
+    cursor: pointer;
+    color: #666;
+}
+
+.accordion1 label span {
+    float: right;
+    line-height: 1.2rem;
+}
+
+.accordion1>ul {
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    background: white;
+    width: 240px;
+    padding: 0 12px;
+}
+
+.accordion1>ul>li {
+    padding: 8px 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.accordion1>ul>li:hover {
+    color: #0a0a0a;
+}
+
+.accordion1 input[type="checkbox"] {
+    display: none;
+    /* checkbox 숨기기 */
+}
+
+.accordion1 input[type="checkbox"]:checked+label+ul {
+    display: block;
+    max-height: 340px;
+}
+
+.info-last {
+    margin-top: 32px;
+}
+
+.info-last * {
+    padding: 4px 0;
+}
+
+.show-more {
+    width: 1040px;
+}
+
+.tabmenu-button {
+    font-size: 0.9rem;
+    margin-right: 8px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid white;
+    padding: 0 0 4px 0;
+}
+
+.tabmenu-color {
+    transition: 0.3s;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.more>div>section img {
+    width: 270px;
+    object-fit: contain;
+    background: #f8f8f8;
+    object-position: center;
+    height: 350px;
+    margin-bottom: 12px;
+}
+
+.more>div>section p {
+    margin: 4px 0;
+}
+
+.info-etc {
+    position: relative;
+}
+
+.info-list {
+    width: 1040px;
+    position: sticky;
+    z-index: 88;
+    top: 100px;
+}
+
+.list {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list li {
+    padding: 16px 8px;
+    width: 100%;
+    background: rgb(247, 247, 247);
+    text-align: center;
+    border-bottom: 1px solid rgb(55, 55, 55);
+    margin-bottom: 88px;
+}
+
+.list :nth-child(2) {
+    border-left: 1px solid rgb(55, 55, 55);
+    border-right: 1px solid rgb(55, 55, 55);
+}
+
+.list a:hover {
+    color: black;
+}
+
+.listbox {
+    margin: 0 auto;
+}
+
+.scroll1,
+.scroll2,
+.scroll3 {
+    width: 1040px;
+    margin-bottom: 72px;
+}
+
+.rds {
+    width: 600px;
+    padding: 32px;
+    background: #ddd;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.scroll1>h5 {
+    text-align: center;
+}
+
+.rds img {
+    width: 50px;
+    height: 50px;
+    margin-right: 32px;
+}
+
+.etc-notice {
+    width: 600px;
+    margin: 16px auto 72px auto;
+    text-align: left;
+}
+
+.etc-notice p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+.info-color {
+    width: 600px;
+    margin: 0 auto 72px auto;
+}
+
+.info-color section {
+    position: relative;
+}
+
+.info-color img {
+    height: 280px;
+    width: 196px;
+    object-fit: contain;
+    background: #f8f8f8;
+    z-index: 8;
+}
+
+.info-color section p {
+    position: absolute;
+    bottom: 16px;
+    width: 196px;
+    text-align: center;
+}
+
+.info-list-1 :nth-child(1) {
+    margin-bottom: 72px;
+}
+
+.info-list-1 img {
+    width: 600px;
+    margin: 16px auto;
+    display: block;
+}
+
+table {
+    width: 1008px;
+    /*아티클은 1040으로 정했으나 테이블은 딱붙으면 안이뻐서 줄임*/
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 12px 0;
+}
+
+th,
+td {
+    border-top: 1px solid #ddd;
+}
+
+.scroll1 td {
+    padding: 16px 0;
+    vertical-align: top;
+}
+
+.scroll1 tr> :nth-child(1) {
+    padding-right: 24px;
+}
+
+.size-img {
+    width: 360px;
+    height: 360px;
+    border: 0px solid #ddd;
+}
+
+.scroll2 .etc-notice {
+    text-align: left;
+}
+
+.review-graph-div {
+    padding: 72px 0;
+}
+
+.star {
+    width:400px;
+    text-align: center;
+}
+.star *{
+    margin: 8px 0;
+}
+.review-graph {
+    width: 640px;
+}
+
+.review-graph>div {
+    display: flex;
+}
+
+.review-graph>div :nth-child(1) {
+    width: 70px;
+    margin-right: 8px;
+}
+
+.review-graph>div :nth-child(3) {
+    margin-left: 8px;
+    line-height: 1.7rem;
+}
+
+.review-graph>div p {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #636363;
+}
+
+.review-btn {
+    margin:8px 0;
+    width: 400px;
+    height: 10px;
+    background: #efefef;
+    position: relative;
+    border-radius: 5px;
+}
+
+.review-data {
+    height: 10px;
+    background: #0a0a0a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.blacks {
+    color: black !important;
+    font-weight: bold;
+}

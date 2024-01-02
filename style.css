@@ -175,6 +175,10 @@ input[type="file"] {
     margin: 16px 0;
 }
 
+.mtb-32 {
+    margin: 32px 0;
+}
+
 .mse-16 {
     margin: 0 16px;
 }
@@ -189,6 +193,10 @@ input[type="file"] {
 
 .mb-128 {
     margin-bottom: 128px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
 }
 
 .mb-32 {
@@ -1047,4 +1055,3 @@ footer>:nth-child(2)> :nth-child(2) p {
     text-decoration: none;
     cursor: pointer;
 }
-
