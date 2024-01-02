@@ -205,7 +205,7 @@ select {
 }
 
 .more>div>section img {
-    width: 270px;
+    width: 240px;
     object-fit: contain;
     background: #f8f8f8;
     object-position: center;
