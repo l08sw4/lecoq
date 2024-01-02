@@ -100,7 +100,7 @@
                         done
                     </span>
                 </div>
-                <p>BLACK</p>
+                <p style="padding-top: 2px;">BLACK</p>
             </div>
             <div class="sp-bt mb-32">
                 <select>
@@ -111,7 +111,7 @@
                     <option>100</option>
                     <option>105</option>
                 </select>
-                <button class="guide-btn bg-gray"><a href="#scroll2">사이즈 가이드</a></button>
+                <button class="guide-btn bg-gray"><a href="#scroll2" style="color: white;">사이즈 가이드</a></button>
             </div>
             <div class="sp-bt">
                 <button class="basket-btn bg-dark">장바구니</button>
@@ -231,7 +231,6 @@
                 </section>
             </div>
         </div>
-
 
     </article>
 
@@ -451,6 +450,64 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <section>
+                        <div class="collapsible" onclick="collapse(this);">
+                            <div class="sp-bt">
+                                <p>★★★★★ 아주 좋아요</p>
+                                <div class="flex">
+                                    <p>2023.01.02</p>
+                                    <img src="images/icon/down-arrow-icon.png">
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <p class="ellipsis">운동할때 입겠다고해서 아들 옷으로 삽니다. 체격이 작고 마른 편이라 95사이즈가 척당하네요.<br>
+                                    맘에 들어하고 양면으로 입을 수 있어 새로운 느낌으로
+                                    입을 수도 있겠어요.</p>
+                                <p class="material-symbols-outlined" style="line-height: 1.2rem;">
+                                    image
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content review-more">
+                            <p>dkd*** | 185cm,보통체형 / 110 2XL</p>
+                            <img src="images/purchase/review-img.jpg">
+                            <p>운동할때 입겠다고해서 아들 옷으로 삽니다. 체격이 작고 마른 편이라 95사이즈가 척당하네요.<br>
+                                맘에 들어하고 양면으로 입을 수 있어 새로운 느낌으로
+                                입을 수도 있겠어요.</p>
+                            <ul class="flex">
+                                <li>실착 사이즈 : 정사이즈</li>
+                                <li>두께감 : 도톰해요</li>
+                                <li>핏 : 적당해요</li>
+                                <li>실제품 색상 : 화면과 같아요</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="collapsible" onclick="collapse(this);">
+                            <div class="sp-bt">
+                                <p>★★★★ 좋아요</p>
+                                <div class="flex">
+                                    <p>2023.01.02</p>
+                                    <img src="images/icon/down-arrow-icon.png">
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <p>선물받은 분이 만족해하고 좋아하십니다.</p>
+                            </div>
+                        </div>
+                        <div class="content review-more">
+                            <p>dkd*** | 160cm,날씬한편/85S</p>
+                            <p>선물받은 분이 만족해하고 좋아하십니다.</p>
+                            <ul class="flex">
+                                <li>실착 사이즈 : 정사이즈</li>
+                                <li>두께감 : 도톰해요</li>
+                                <li>핏 : 적당해요</li>
+                                <li>실제품 색상 : 화면과 약간 달라요</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
     </article>
@@ -467,10 +524,30 @@
             });
 
         });
-    </script>
-    <a href="#" class="top-btn"><img src="images/icon/top-btn.png"></a>
 
-    <!-- <div w3-include-html="footer.html"></div>-->
+
+        //펼치게
+        function collapse(element) {
+            var before = document.getElementsByClassName("active")[0] // 기존에 활성화된 버튼
+            if (before && document.getElementsByClassName("active")[0] != element) { // 자신 이외에 이미 활성화된 버튼이 있으면
+                before.nextElementSibling.style.maxHeight = null; // 기존에 펼쳐진 내용 접고
+                before.classList.remove("active"); // 버튼 비활성화
+            }
+            element.classList.toggle("active"); // 활성화 여부 toggle
+
+            var content = element.nextElementSibling;
+            if (content.style.maxHeight != 0) { // 버튼 다음 요소가 펼쳐져 있으면
+                content.style.maxHeight = null; // 접기
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px"; // 접혀있는 경우 펼치기
+            }
+        }
+    </script>
+
+    <a href="#" class="top-btn"><img src="images/icon/top-btn.png"></a>
+    
+    <div w3-include-html="footer.html"></div>
+
 </body>
 
 
