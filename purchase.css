@@ -102,6 +102,7 @@
 }
 
 .purchase-intro {
+    width: 500;
     border-left: 1px solid #ddd;
     position: fixed;
     z-index: 99;
