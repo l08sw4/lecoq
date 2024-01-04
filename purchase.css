@@ -49,7 +49,7 @@
 
 .slides {
     position: relative;
-    width: 1200px;
+    width: 1400px;
     height: 720px;
     overflow: hidden;
 }
@@ -64,17 +64,17 @@
 }
 
 .slide2 {
-    width: 600px;
-    height: 720px;
+    width: 700px;
+    height: 800px;
     transition: 0.6s;
 }
 
 .slide2 img {
-    width: 520px;
-    height: 720px;
+    width: 700px;
+    height: 800px;
     object-fit: contain;
     background: #f8f8f8;
-    object-position: center;
+    object-position:center;
 }
 
 .btnLeft,
@@ -90,9 +90,6 @@
     color: rgb(67, 67, 67);
 }
 
-.btnRight {
-    right: 20px;
-}
 
 .modal {
     width: 100%;
@@ -136,7 +133,6 @@
 .price-info p {
     line-height: 1.7rem;
 }
-
 
 .color-option span {
     border-radius: 50%;
@@ -222,7 +218,7 @@ select {
 }
 
 .info-list {
-    width: 1200px;
+    width: 1400px;
     position: sticky;
     z-index: 88;
     top: 100px;
@@ -259,7 +255,7 @@ select {
 .scroll1,
 .scroll2,
 .scroll3 {
-    width: 1200px;
+    width: 1400px;
     margin-bottom: 72px;
 }
 
@@ -328,7 +324,7 @@ select {
 }
 
 table {
-    width: 1200px;
+    width: 1400px;
     text-align: left;
     border-collapse: collapse;
 }
