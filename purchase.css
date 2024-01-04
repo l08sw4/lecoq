@@ -115,7 +115,7 @@
 }
 
 .purchase-intro {
-    width: 500px;
+    max-width: 424px;
     border-left: 1px solid #ddd;
     position: fixed;
     z-index: 99;
@@ -124,7 +124,6 @@
     padding: 134px 5% 0 32px;
     height: 100vh;
     top: 0;
-    display: none;
 }
 
 .price-font {
