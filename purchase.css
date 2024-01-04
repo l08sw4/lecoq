@@ -127,7 +127,6 @@
     padding: 134px 5% 0 32px;
     height: 100vh;
     top: 0;
-    display: none;
 }
 
 .price-font {
@@ -237,7 +236,6 @@ select {
 
 .info-list {
     width: 1400px;
-
     position: sticky;
     z-index: 88;
     top: 100px;
