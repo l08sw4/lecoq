@@ -41,6 +41,9 @@
     color: white;
 }
 
+.pr-96 {
+    padding-right: 96px;
+}
 
 /*start*/
 .mains {
@@ -124,6 +127,7 @@
     padding: 134px 5% 0 32px;
     height: 100vh;
     top: 0;
+    display: none;
 }
 
 .price-font {
@@ -233,6 +237,7 @@ select {
 
 .info-list {
     width: 1400px;
+
     position: sticky;
     z-index: 88;
     top: 100px;
@@ -362,9 +367,13 @@ td {
 }
 
 .size-img {
-    width: 360px;
-    height: 360px;
+    width: 400px;
+    height: 400px;
     border: 0px solid #ddd;
+}
+
+.scroll2 td {
+    text-align: center;
 }
 
 .scroll2 .etc-notice {
